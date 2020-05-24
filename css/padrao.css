@@ -1,0 +1,224 @@
+.title-box{
+    font-size: 3vh;
+    margin-top: 0;
+}
+.icon-box{
+    display: block;
+    font-size: 6vh;
+    margin-top:10px;
+}
+.content{
+    min-height: 20vw;
+    max-height: 20vw;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow:auto;
+    width: 100%;
+}
+.floating-button-content{
+    margin:5px;
+}
+.linhas{
+    border:2px solid #FFF;
+}
+.linhas-content{
+    margin:0 auto;
+}
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+}
+.valores{
+    color:#FFF;
+}
+.itens{
+    width: 100%;
+    background: rgba(255,255,255,0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #FFF;
+    margin-top: 5px;
+}
+.close{
+    color: #FFF;
+    cursor: pointer;
+    font-size: 3vh;
+}
+.addInput{
+    background: rgba(255,255,255,0.1);
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.back-icon{
+    position: absolute;
+    font-size: 30vh;
+    display: block; 
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0.07;
+}
+@media screen and (max-width: 767px) {
+    .content{
+        min-height: 20vw;
+        max-height: 60vw;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        overflow:auto;
+        width: 100%;
+    }
+    #modal1{
+        width: 90%!important;
+    }
+}
+@media print {
+    .close, .addInput, .floating-button-content, .fixed-action-btn{
+        display: none!important;
+    }
+    .linhas{
+        width: 33.3%!important;
+        height: 33.3vh!important;
+    }
+    .itens{
+        width: 45%;
+        display: inline-block;
+        margin-left:10px;
+        font-size:10px;
+    }
+    .title-box{
+        font-size: 14px!important;
+    }
+    .icon-box{
+        font-size: 30px;
+    }
+    @page{
+        margin: 0px;
+    }
+}
+#data{
+    display: none;
+}
+#modal1{
+    width: 35%;
+    max-height: 700px;
+}
+.boxP{
+    display: inline-block;
+    cursor: pointer;
+    width: 100px!important;
+    margin: 10px;
+}
+.boxProject{
+    margin: 0 auto;
+    display: flex;
+    width: 100px!important;
+    height: 100px!important;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #e9eaed;
+}
+.boxProject2{
+    margin: 0 auto;
+    display: flex;
+    width: 100px!important;
+    height: 100px!important;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.labelP{
+    display: block;
+    text-align: center!important;
+    color: #333;
+    max-height: 30px!important;
+    min-height: 30px!important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: -15px;
+}
+.icon-project{
+    display: flex!important;
+    flex-direction: row!important;
+    justify-content: center!important;
+    align-items: center!important;
+    color: #bbb!important;
+    font-size: 5vh!important;
+}
+.icon-project2{
+    display: flex!important;
+    flex-direction: row!important;
+    justify-content: center!important;
+    align-items: center!important;
+    font-size: 5vh!important;
+    opacity: 0.4;
+}
+.back{
+    width: 60vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.7;
+}
+#titleproject{
+    margin: 0 auto;
+    height: 20px;
+    border: none;
+    width: 100%!important;
+}
+#conf{
+    position: fixed;
+    top:0;
+    right: 0;
+    padding: 5px 10px;
+}
+#dropdown1{
+    width: 250px!important;
+}
+#fotoperfil{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    padding: 10px;
+    display: inline-block;
+    background: url('../img/perfil.png') center no-repeat;
+    background-size: 100%;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+#namePerfil{
+    display: inline-block;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90px;
+    height: 40px;
+    padding-top:10px;
+    margin-left:5px;
+    color: #aaa;
+    font-family: helvetica, tahoma, verdana, arial;
+}
+#chipTitle{
+    width: 200px;
+    float: left;
+    position: absolute;
+    right: 70px;
+    bottom: -60px;
+}
+.cancelar{
+    border: 1px solid rgba(209, 47, 25,0.5);
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+}
+.cancelar:hover{
+    box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.3);
+    background: rgba(223, 33, 12, 1)!important;
+}
